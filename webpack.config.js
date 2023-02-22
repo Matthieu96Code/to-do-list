@@ -7,7 +7,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
   output: {
       filename: 'main.js',
       path: path.resolve(__dirname, 'dist'),
+      clean: true,
   }, 
+  devServer: {
+    static: './dist',
+  },
   module: {
         rules: [
           {
@@ -18,8 +22,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html',
+        template: path.resolve(__dirname, "src", "index.html")
     }),
-  ],
-   
+  ]
  };
