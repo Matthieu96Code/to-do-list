@@ -116,7 +116,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _injectHtml_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./injectHtml.js */ \"./src/injectHtml.js\");\n\n\n// Array of todo task\n\nconst todoTasks = [\n  {\n    description: 'wash the dishes',\n    completed: false,\n    index: 0,\n  },\n  {\n    description: 'learn code',\n    completed: false,\n    index: 1,\n  },\n  {\n    description: 'complete todo list project',\n    completed: false,\n    index: 2,\n  },\n];\n\ntodoTasks.forEach((tasksElement) => {\n  (0,_injectHtml_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(tasksElement);\n});\n\n\n//# sourceURL=webpack://to-do-list/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _injectHtml_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./injectHtml.js */ \"./src/injectHtml.js\");\n/* harmony import */ var _taskArray_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./taskArray.js */ \"./src/taskArray.js\");\n\r\n\r\n\r\n\r\n_taskArray_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"].forEach((tasksElement) => {\r\n  (0,_injectHtml_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(tasksElement);\r\n});\r\n\n\n//# sourceURL=webpack://to-do-list/./src/index.js?");
 
 /***/ }),
 
@@ -127,6 +127,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((tasksElement) => {\r\n  const listContent = document.getElementById('task-list');\r\n  const task = document.createElement('li');\r\n  task.className = 'pm-border list-container';\r\n  task.innerHTML = `\r\n    <input class=\"list-check\" type=\"checkbox\" id=\"${tasksElement.index}\" name\"task ${tasksElement.index}\">\r\n    <label class=\"icon-set\" for=\"task-${tasksElement.index}\" >${tasksElement.description} \r\n      <a class=\"action-icon\" href=\"#\">\r\n        <span class=\"material-symbols-outlined\">\r\n          more_vert\r\n        </span>\r\n      </a>\r\n    </label>`;\r\n\r\n  listContent.appendChild(task);\r\n});\r\n\n\n//# sourceURL=webpack://to-do-list/./src/injectHtml.js?");
+
+/***/ }),
+
+/***/ "./src/taskArray.js":
+/*!**************************!*\
+  !*** ./src/taskArray.js ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([\r\n  {\r\n    description: 'wash the dishes',\r\n    completed: false,\r\n    index: 0,\r\n  },\r\n  {\r\n    description: 'learn code',\r\n    completed: false,\r\n    index: 1,\r\n  },\r\n  {\r\n    description: 'complete todo list project',\r\n    completed: false,\r\n    index: 2,\r\n  },\r\n]);\n\n//# sourceURL=webpack://to-do-list/./src/taskArray.js?");
 
 /***/ })
 

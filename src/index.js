@@ -1,6 +1,6 @@
 import './style.css';
-import populate from './injectHtml.js';
-import todoTasks from './taskArray.js';
+import populate from './injectHtml';
+import todoTasks from './taskArray';
 
 todoTasks.forEach((tasksElement) => {
   populate(tasksElement);
