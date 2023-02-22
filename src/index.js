@@ -19,3 +19,16 @@ const todoTasks = [
     index: 2,
   },
 ];
+
+const populate = (tasksElement) => {
+  const listContent = document.getElementById('task-list');
+  const task = document.createElement('li');
+  task.innerHTML = `<input type="checkbox" id="${tasksElement.id}" name"task ${tasksElement.id}">
+  <label for="task ${tasksElement.id}" >${tasksElement.description}</label>`;
+
+  listContent.appendChild(task);
+};
+
+todoTasks.forEach(tasksElement => {
+  populate(tasksElement);
+});
