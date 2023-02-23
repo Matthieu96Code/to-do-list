@@ -20,6 +20,7 @@ body {
   align-items: center;
   justify-content: space-between;
   background-color: white;
+  position: relative;
 }
 
 .pm-font {
@@ -73,8 +74,11 @@ h1 {
   position: absolute;
   border: none;
   z-index: 1;
+  height: 100%;
+  width: calc(100% - 45px);
 }
 
 input[type=text]:focus {
-  background: yellow;
+  border: none;
+  outline: none;
 }

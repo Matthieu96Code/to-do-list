@@ -51,8 +51,8 @@
 ### Key Features <a name="key-features"></a>
 
 - **Show the app section**
-- **Shom an input form**
-- **Show a list from an array**
+- **Show an input form**
+- **Users can add and remove task**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
