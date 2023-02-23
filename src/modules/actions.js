@@ -11,8 +11,8 @@ const sort = () => {
   const arrayT = getList();
   const list = document.querySelectorAll('li');
   arrayT.forEach((element, index) => {
-    arrayT[index].index = index;
-    list[index].id = `list-${index}`;
+    arrayT[index].index = index + 1;
+    list[index].id = `list-${index + 1}`;
     save(arrayT);
   });
 };
@@ -35,7 +35,7 @@ const removeTaskArray = (element) => {
   if (element.classList.contains('list-container')) {
     const taskListArray = getList();
     taskListArray.forEach((task, index) => {
-      if (index === parseInt(element.id[element.id.length - 1], 10)) {
+      if (index + 1 === parseInt(element.id[element.id.length - 1], 10)) {
         taskListArray.splice(index, 1);
         save(taskListArray);
         sort();

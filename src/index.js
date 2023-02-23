@@ -20,6 +20,7 @@ firstStart();
 document.getElementById('add-btn').addEventListener('click', () => {
   const taskListStore = getList();
   addTaskArray(taskListStore);
+  sort();
 });
 
 //  switch selection out of main ul
