@@ -1,12 +1,30 @@
 import './style.css';
 import populate from './injectHtml';
-import { addTaskArray, removeTaskArray,taskListArray } from './actions';
+import { getList, addTaskArray, removeTaskArray, sort, editTask } from './actions';
 
-// actions.forEach((tasksElement) => {
-//   populate(tasksElement);
-// });
+const launch = () => {
+  const taskListStore = getList();
+  taskListStore.forEach((element) => {
+    populate(element);
+  });
+};
 
-document.getElementById('add-btn').addEventListener('click', (e) => {
-  addTaskArray(taskListArray);
-  console.log(taskListArray);
+launch();
+
+document.getElementById('add-btn').addEventListener('click', () => {
+  const taskListStore = getList();
+  addTaskArray(taskListStore);
 });
+
+document.querySelector('ul').addEventListener('click', (e) => {
+  if (e.target.classList.contains('replace-task')) {
+    e.target.addEventListener('change', () => {
+      editTask(e.target.parentElement);
+    });
+  }
+});
+
+// document.querySelector('ul').addEventListener('click', (e) => {
+//   removeTaskArray(e.target.parentElement);
+//   sort();
+// });
