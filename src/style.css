@@ -20,6 +20,7 @@ body {
   align-items: center;
   justify-content: space-between;
   background-color: white;
+  position: relative;
 }
 
 .pm-font {
@@ -67,4 +68,17 @@ h1 {
 
 #clear-task {
   padding: 10px 0;
+}
+
+.replace-task {
+  position: absolute;
+  border: none;
+  z-index: 1;
+  height: 100%;
+  width: calc(100% - 45px);
+}
+
+input[type=text]:focus {
+  border: none;
+  outline: none;
 }
