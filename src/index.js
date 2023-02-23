@@ -3,7 +3,7 @@ import populate from './modules/injectHtml';
 import {
   getList, addTaskArray, removeTaskArray, sort, editTask, delAppear, deselect,
 } from './modules/actions';
-import { checkedTask, clearAll } from './modules/interact';
+import { checkedTask, clearAllChecked } from './modules/interact';
 
 // launch old list
 
@@ -60,4 +60,9 @@ document.querySelector('ul').addEventListener('click', (check) => {
       checkedTask(check.target);
     });
   }
+});
+
+document.getElementById('clear-task').addEventListener('click', () => {
+  clearAllChecked();
+  sort();
 });

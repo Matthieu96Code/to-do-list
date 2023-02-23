@@ -81,5 +81,4 @@ h1 {
 input[type=text]:focus {
   border: none;
   outline: none;
-  font-style: italic;
 }

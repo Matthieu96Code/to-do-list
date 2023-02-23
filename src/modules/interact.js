@@ -1,5 +1,5 @@
 import {
-  getList, addTaskArray, removeTaskArray, sort, editTask, delAppear, deselect, save,
+  getList, save,
 } from './actions';
 
 const checkedTask = (check) => {
@@ -18,11 +18,18 @@ const checkedTask = (check) => {
     taskListArray[fieldSelect - 1].completed = false;
     save(taskListArray);
   }
-  console.log(taskListArray[fieldSelect - 1].completed);
 };
 
-const clearAll = () => {
-
+const clearAllChecked = () => {
+  let taskListArray = getList();
+  const list = document.querySelectorAll('li');
+  list.forEach((element, index) => {
+    if (taskListArray[index].completed === true) {
+      list[index].remove();
+    }
+  });
+  taskListArray = taskListArray.filter((array) => !array.completed);
+  save(taskListArray);
 };
 
-export { checkedTask, clearAll };
+export { checkedTask, clearAllChecked };
