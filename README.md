@@ -51,8 +51,9 @@
 ### Key Features <a name="key-features"></a>
 
 - **Show the app section**
-- **Show an input form**
+- **Show an input form for add a task**
 - **Users can add and remove task**
+- **allow to checked task done and clear them**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -61,7 +62,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://matthieu96code.github.io/to-do-list/dist/)
+- N/A
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -129,9 +130,9 @@ You can deploy this project using: a GitHub Page
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **Allow to add task**
+- [ ] **add a beautiful design**
 - [ ] **professional animations and transitions**
-- [ ] **Add section for visitors interaction**
+- [ ] **Add more visitors interaction**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
