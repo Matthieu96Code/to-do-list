@@ -133,8 +133,7 @@ You can deploy this project using: a GitHub Page
 - [ ] **add a beautiful design**
 - [ ] **professional animations and transitions**
 - [ ] **Add more visitors interaction**
-- [ ] ** Ads keygoad word
-
+- [ ] **Add keyboard event handler**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
